@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900 &display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    /* list-style: none; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+body{
+background: url(./Images/irfan-simsar-wxWulfjN-G0-unsplash.jpg) no-repeat center center fixed; /* center center se refere ao posicionamento nos eixos x e y*/
+height:100vh;
+justify-content: space-between;
+align-items: center;
+}
+
+/* main{ min-height: 100vh;} */
+#mainserv{ min-height: 100vh;
+  background: #23232e83;
+  z-index: 100;
+  
+   }
+a{  color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#cu{
+  background: tomato;
+}
+/* .circle{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.993);
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    z-index: -10;} */
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; /* para colocar lista e logo 1 ao lado do outro*/
+    justify-content: space-around; /* faz com que o espaço ao redor seja metade do espaço entre ele*/
+    align-items: center; /*alinha verticalmente ao centro*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #4a57f3;
+    height: 8vh;   
+}
+
+
+.nav-list{ /*se refere ao UL*/
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li { /*seleciona cada item da lista*/
+    letter-spacing: 3px;
+    margin-left: 32px;  
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+} 
+
+.mobile-menu div{ /* seleciona as divs que se referem a cada uma das linhas do menu hamburger*/
+    width: 32px;
+    height: 2px;
+    background: #fff !important;
+    margin: 8px;
+    transition: 0,3s;
+}
+
+#btn-mobile{ /*botão da navbar*/
+    margin:0;
+    padding:0;
+    appearance: none;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color:rgba(255, 255, 255, 0);
+    border:rgba(255, 255, 255, 0.397);
+    position: absolute;
+    }
+    /* ------------------------------------------------------------------------------------------- */
+
+    .contentServ{
+        display: flex;
+        justify-content: left;
+        /* list-style: inside; */
+        align-items: left;
+        height: 100%;
+        padding: 3em;
+        margin-top: 8vh;
+        margin-left:2vh;
+        font-size: 1.5em;
+        z-index: 1000;
+        color: #ffff;
+        font-weight: 800;
+    }
+    .pagetext{
+        position:static;
+        width: 70%;
+        height: 100%;
+        text-shadow: 1px 1px 2px black;
+        
+
+    }
+    .pagetext h2{ font-size: 2.5em;
+
+    }
+
+    /* ----------------------------------------------------------------------------------------- */
+
+
+         /* ------------------------------------------------footer------------------------- */
+
+         footer{
+            position: relativeab;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            height:10vh auto;
+            padding: 50px 30px;
+            justify-content: space-between;
+            color: #FFF;
+            display: flex;
+            background: #4a57f3;/*#f86d36*/
+            flex-wrap: wrap;
+            z-index: 100000000;
+          }
+           
+          footer .containerf{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+          
+          }
+          
+          footer .containerf .sec{
+            margin-right: 30px;
+          
+          }
+          
+          footer .containerf .sec.aboutus{
+            width: 40%;
+          }
+          
+          footer .containerf .sec.aboutus h2 {
+            position: relative;
+            color: #23232e;
+            font-weight: 500px;
+            margin-bottom: 15px;
+          }
+          footer .containerf .sec.aboutus h2:before
+          {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #f00;
+          }
+          
+          .sb li{
+            margin-left: 0;
+            padding:5px;
+            width:170px;
+            display:flex;
+            text-align: right;
+          }
+          
+          * .fa-envelope, .fa-phone { 
+            text-indent: -5px; 
+          
+          }
+          
+          .sc{ 
+            position: relative;
+            margin-top: 20px;
+            display:inline-flex;
+            
+            
+            
+          }
+          .sc li {
+            list-style:none;
+            
+          }
+          .sc li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #23232e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+          }
+          
+          /* ------------------------------------------------footer------------------------- */
+          /*--------------------------------------------------------------RESPONSIVITY--------------------------------------------*/
+
+          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .col-25, .col-75 {
+              width: 100%;
+              margin-top: 0;
+            }
+            #banner { width: 100%;}
+            .banner img{ width: 100%;}
+            .contentServ{
+             padding: 0%;
+            }
+            }
+            .contato { max-width: none;}
+          
+
+          @media (max-width: 999px) {
+            .contentServ{
+              /* width: 100%; */
+              font-size: 1em;
+            }
+            .tex1{ 
+                width: 100%;
+               font-size: 1.2em;
+               margin-bottom: 30px;
+               padding: 15px;
+             }
+             #card{
+               flex-wrap: wrap;
+             }
+             section.imagens{ display: none; }
+             body {
+               overflow-x: hidden; /* se algo transborda é escondido*/
+             }
+           }
+
+           @media (max-width: 600px) {
+
+            *{ font-size: 1em;}
+            .nav-list {
+                    display: none;
+            }
+            .mobile-menu{
+                display: block;
+                position: absolute;
+                top: 5;
+                right: 0;
+            }
+             #menu{
+                display: flex;
+                position: absolute;
+                width: 100vw;
+                top: 8vh;
+                right: 0;
+                height: 0vh;
+                transition: 0.6s;
+                background: tomato;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                z-index: 1000; 
+                visibility: hidden; 
+                overflow-y: hidden;
+            }
+            #nav.active #menu{
+                height: 50vh;
+                visibility:visible;
+                overflow-y: auto;
+            }
+            }
+           /*--------------------------------------------------------------RESPONSIVITY--------------------------------------------*/

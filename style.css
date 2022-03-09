@@ -1,0 +1,572 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900 &display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+body{
+background:#f2f2f2; /*url(./Images/tamanna-rumee-CIfgsywk-_4-unsplash.jpg) no-repeat center center fixed; /* center center se refere ao posicionamento nos eixos x e y*/
+height:100%;
+}
+/* ----------------------------------------------- Opening animation--------------------------------------- */
+.open
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 10000;
+}
+.open .layer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	animation: open 1s ease-in-out forwards;
+}
+.open .layer:nth-child(1)
+{
+	background: #000547;
+	z-index: 2;
+}
+.open .layer:nth-child(2)
+{
+	background: #049DD9;
+	animation-delay: 1s;
+	z-index: 1;
+}
+@keyframes open
+{
+	0%
+	{
+		transform: scaleY(1);
+	}
+	100%
+	{
+		transform: scaleY(0);
+	}
+}
+/* ----------------------------------------------- end of Opening animation--------------------------------------- */
+main{ 
+  height:100%;
+}
+
+
+a{  color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; /* para colocar lista e logo 1 ao lado do outro*/
+    justify-content: space-around; /* faz com que o espaço ao redor seja metade do espaço entre ele*/
+    align-items: center; /*alinha verticalmente ao centro*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #4a57f3;
+    height: 8vh;   
+}
+
+
+.nav-list{ /*se refere ao UL*/
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li { /*seleciona cada item da lista*/
+    letter-spacing: 3px;
+    margin-left: 32px;  
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+} 
+
+.mobile-menu div{ /* seleciona as divs que se referem a cada uma das linhas do menu hamburger*/
+    width: 32px;
+    height: 2px;
+    background: #fff !important;
+    margin: 8px;
+    transition: 0,3s;
+}
+
+#btn-mobile{ /*botão da navbar*/
+    margin:0;
+    padding:0;
+    appearance: none;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color:rgba(255, 255, 255, 0);
+    border:rgba(255, 255, 255, 0.397);
+    position: absolute;
+    }
+    
+
+
+        /*------------------------------------------- end of HEADER--------------------------------- */
+         
+        /*--------------------------------------------- CONTENT-PAGE CONTACT--------------------------------------*/
+        #contato{ 
+          display:flex;
+          flex-wrap:wrap;
+          max-width: 100vh;
+          background:#23232e;
+       }
+        
+        main h1{ margin-bottom: 30px; color:#4a57f3;}
+        main.content {display: flex; 
+                      justify-content: center;  
+                      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+                      height: 100vh; margin:5px;}
+        
+        .contato { 
+          display: flex; 
+          flex-direction: column; 
+          width: 100%; color: rgb(63, 62, 60); 
+          background: #f2f2f200; 
+          padding: 30px; 
+          border-radius: 5px;
+           max-width:50vh;
+            max-height: 430px;
+            position: relative;
+            z-index: 30;
+          }
+
+        .form {display:flex; flex-direction: column;}
+        
+        main form span { 
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: #4a57f3;
+          font-size: 1rem;
+          font-weight: 800;
+          letter-spacing: 2px;
+        }
+        .field{ 
+          width: 300px;
+          height: 2.5em;
+          padding: 0 0.5rem;
+          margin-top: 1rem;
+          outline: none;
+          color: rgba(166, 166, 166);
+          font-size: 1rem;
+          border: 1px solid #040B18;
+          border-radius: 8px;}
+         
+
+ 
+          input[type=submit] {
+            margin-top: 7px;
+            background-color: #000547;
+            font-weight: 800;
+            width: 318px;
+            color: white;
+            padding: 12px 20px;
+            border: none;border-radius: 10px; cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #5945a0;
+          }
+
+          section.imagens{ 
+            display: flex;
+            align-items:flex-end;
+            justify-content: flex-end;
+            width: 50vh;
+
+          }
+                  /*--------------------------------------------- CONTENT PAGE CONTACT--------------------------------------*/
+          
+          /* Clear floats after the columns */
+          /* .row:after {
+            content: "";
+            display: table;
+            clear: both; */
+          
+    
+
+
+        /* -------------------------------------------------------------body-------------------------- */
+
+#card{
+
+display: flex;
+flex-direction: row;
+position: relative;
+/* background: rgb(255, 255, 255); */
+margin-top: 62px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+width:100%;
+max-width:1500px;
+top: 1vh;
+border-radius: 10px;
+justify-content:center;
+box-sizing: border-box;
+} 
+
+#banner {
+  display: flex;
+  width: 50%;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.banner{
+flex: 200px; 
+display: flex;
+width: 50%;
+height: 100%;
+
+}
+.banner img{
+  height:100%;
+  padding:0;
+  width: 100%;
+  opacity: 90%;
+  background: #f2f2f2;
+ }
+  
+
+.tex1{
+  display:flex;
+  flex-direction: column;
+  padding: 0 auto;
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+  background:#f2f2f2;
+  width:50%;
+  justify-items: center;
+  color: #56576e;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+
+}
+
+.tex1 h1
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+  font-size: 2.5em;
+	display: inline-block;
+	transform-origin: left;
+	transform: scaleX(0);
+	animation: revealTextReverse 1s ease-in-out forwards;
+}
+  
+  .tex1 h1::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4a57f3;
+	width: 100%;
+	height: 100%;
+	transform-origin: right;
+	animation: revealText 1s ease-in-out forwards;
+	animation-delay: 2s;
+}
+@keyframes revealText
+{
+	0%
+	{
+		transform: scaleX(1);
+	}
+	100%
+	{
+		transform: scaleX(0);
+	}
+}
+@keyframes revealTextReverse
+{
+	0%
+	{
+		transform: scaleX(0);
+	}
+	100%
+	{
+		transform: scaleX(1);
+	}
+}
+ 
+.tex1 p
+{
+	opacity: 0;
+	font-weight: 400;
+	
+	animation: fadeIn 1s linear forwards;
+	animation-delay: 3s;
+}
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+ #tex2{  
+  display: flex;
+  flex-direction: column;
+  padding:40px 0 40px 0;
+  margin:40px 0 100px 0;
+  width:100%;
+  color: #049DD9; /*#2AF59E*/
+  background:#000547;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+  text-align:center;
+  justify-content:center;}
+
+#tex2 p{ margin: 0;
+margin-bottom: 50px;}
+#tex2 img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  max-height: 426px;
+}
+
+
+  #portao a{ 
+    align-items: center;
+    padding: 10px;
+    background-color:#049DD9;
+    margin-top: 4px;
+    width: auto; 
+    border-radius: 30px;
+    font-size: 0.6;
+  }
+  
+
+
+
+
+         /* ------------------------------------------------footer------------------------- */
+
+footer{
+  position: relativeab;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height:10vh auto;
+  padding: 50px 30px;
+  justify-content: space-between;
+  color: #f2f2f2;
+  display: flex;
+  background: #4a57f3;/*#f86d36*/
+  flex-wrap: wrap;
+  z-index: 100000000;
+}
+ 
+footer .containerf{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+
+}
+
+footer .containerf .sec{
+  margin-right: 30px;
+
+}
+
+footer .containerf .sec.aboutus{
+  width: 40%;
+}
+
+footer .containerf .sec.aboutus h2 {
+  position: relative;
+  color: #23232e;
+  font-weight: 500px;
+  margin-bottom: 15px;
+}
+footer .containerf .sec.aboutus h2:before
+{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+.sb li{
+  margin-left: 0;
+  padding:5px;
+  width:170px;
+  display:flex;
+  text-align: right;
+}
+
+* .fa-envelope, .fa-phone { 
+  text-indent: -5px; 
+
+}
+
+.sc{ 
+  position: relative;
+  margin-top: 20px;
+  display:inline-flex;
+  
+  
+  
+}
+.sc li {
+  list-style:none;
+  
+}
+.sc li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #23232e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------footer------------------------- */
+
+main.cards{
+ display: flex;
+ padding: 32px;
+ justify-content: center;
+ align-items: center;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding:1rem  1.5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 32px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main.cards section.card:first-child{
+  margin-left: 0;
+}
+main.cards section.card .icon{
+  width: 64px;
+  height: 64px;
+}
+main.cards section.card img{
+  width: 100%;
+}
+main.cards section.card h3{
+  margin:16px 0;
+}
+main.cards section.card span{
+  font-weight: 300;
+  max-width:240px;
+}
+
+
+/*--------------------------------------------------------------RESPONSIVITY--------------------------------------------*/
+
+          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .col-25, .col-75 {
+              width: 100%;
+              margin-top: 0;
+            }
+            #banner { width: 100%;}
+            .banner img{ width: 100%;}
+            main{ height: 100%;
+            }
+            .contato { max-width: none;}
+          }
+
+          @media (max-width: 999px) {
+            .tex1{ 
+                width: 100%;
+               font-size: 1.2em;
+               margin-bottom: 30px;
+               padding: 15px;
+             }
+             #card{
+               flex-wrap: wrap;
+             }
+             section.imagens{ display: none; }
+             body {
+               overflow-x: hidden; /* se algo transborda é escondido*/
+             }
+           }
+
+           @media (max-width: 600px) {
+
+            *{ font-size: 1em;}
+            .nav-list {
+                    display: none;
+            }
+            .mobile-menu{
+                display: block;
+                position: absolute;
+                top: 5;
+                right: 0;
+            }
+             #menu{
+                display: flex;
+                position: absolute;
+                width: 100vw;
+                top: 8vh;
+                right: 0;
+                height: 0vh;
+                transition: 0.6s;
+                background: tomato;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                z-index: 1000; 
+                visibility: hidden; 
+                overflow-y: hidden;
+            }
+            #nav.active #menu{
+                height: 50vh;
+                visibility:visible;
+                overflow-y: auto;
+            }
+            }
+           /*--------------------------------------------------------------RESPONSIVITY--------------------------------------------*/
